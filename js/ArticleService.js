@@ -42,7 +42,7 @@ export function getArticle(id) {
 export function createArticle(title, content, image) {
   return fetch(`${BASE_URL}/articles`, {
     method: "POST",
-    hearders: {
+    headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({

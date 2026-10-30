@@ -28,3 +28,7 @@
 - style.css: 공통 스타일
 - pages/: 개별 페이지
 - images/: 이미지 리소스
+
+## 넷틀리파이 배포 주소
+
+- https://fs-17-sungryoung-sprintmission2.netlify.app
