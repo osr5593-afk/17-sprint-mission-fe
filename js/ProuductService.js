@@ -9,11 +9,11 @@ export async function getProductList(page, pageSize, keyword) {
     });
     return response.data;
   }
-} catch (error) {
+ catch (error) {
   console.log("상품 목록 조회 실패:", error.message);
   throw error;
 }
-
+}
 // 특정 상품 조회 (GET)
 export async function getProduct(id) {
   try {
@@ -29,7 +29,7 @@ export async function getProduct(id) {
 export async function createProduct(name, description, price, tags, images) {
 try {
   const response = await axios.post(`${BASE_URL}/products`, {
-    image,
+    images,
     tags,
     price,
     description,
