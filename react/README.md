@@ -1,16 +1,29 @@
-# React + Vite
+## 상점 페이지 구현
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+상점에 올라온 상품들을 볼 수 있는 페이지입니다. 원하는 상품을 검색하고
 
-Currently, two official plugins are available:
+## 기술 스택
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- react
 
-## React Compiler
+## 페이지 구성
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 베스트 상품
+- 판매 중인 상품
 
-## Expanding the ESLint configuration
+## 주요 기능
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 베스트 상품 목록 확인
+- 판매 중인 상품 확인 및 검색
+
+## 폴더 구조
+
+- api(api 주소 연동): api.js
+- components(컴포넌트 jsx 파일): Footer.jsx, header.jsx, Pagination.jsx, ProductCard.jsx
+- hooks(커스텀 훅) : usePageSize.js, useProducts.js
+- App.jsx : 전체 페이지 구성 jsx
+- index.css : 공통 스타일
+- MarketApp.jsx : 상품 목록 메인 섹션 구성 jsx
+- .env : 데이터 서버 주소
+- index.html : 기본 html
+- assets : 이미지 파일
