@@ -1,9 +1,8 @@
 export default function Market() {
   return (
     <>
-      <div>
-        <h3>베스트 상품</h3>
-      </div>
+      <h3>베스트 상품</h3>
+      <div></div>
       <div>
         <h3>판매 중인 상품</h3>
         <form>
