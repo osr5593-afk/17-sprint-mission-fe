@@ -24,6 +24,10 @@ export default function useProducts({
           params: { page, pageSize, orderBy, keyword },
           signal: controller.signal,
         });
+
+        console.log("요청 주소:", response.config.baseURL);
+        console.log("API 응답:", response.data);
+
         setProducts(response.data.list);
         setTotalCount(response.data.totalCount);
       } catch (e) {

@@ -3,7 +3,7 @@ const GROUP_SIZE = 5;
 export default function Pagination({ page, totalPage, onChange }) {
   const startPage = Math.floor((page - 1) / GROUP_SIZE) * GROUP_SIZE + 1;
   const endPage = Math.min(startPage + GROUP_SIZE - 1, totalPage);
-  const pageNumbers = Array.form(
+  const pageNumbers = Array.from(
     { length: endPage - startPage + 1 },
     (_, i) => startPage + i,
   );

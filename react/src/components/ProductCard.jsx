@@ -1,4 +1,4 @@
-const NO_IMAGE = "/no_image.svg";
+const NO_IMAGE = "/no-image.svg";
 
 export default function ProductCard({ product }) {
   const { name, price, images, favoriteCount } = product;
@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
         onError={(e) => (e.currentTarget.src = NO_IMAGE)}
       />
       <p className="card-name">{name}</p>
-      <p className="card-price">{price.toLocalString()}원</p>
+      <p className="card-price">{price.toLocaleString()}원</p>
       <p className="card-favorite">♡ {favoriteCount}</p>
     </div>
   );
